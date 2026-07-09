@@ -1,1 +1,23 @@
-<p>lista-disciplina works!</p>
+<div class="lista-container">
+  <h2>📚 Lista de Disciplinas</h2>
+
+  <table class="disciplinas-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of disciplinas">
+        <td>{{ d.id }}</td>
+        <td>{{ d.nome }}</td>
+        <td>{{ d.descricao }}</td>
+      </tr>
+      <tr *ngIf="disciplinas.length === 0">
+        <td colspan="3">Nenhuma disciplina cadastrada ainda.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
