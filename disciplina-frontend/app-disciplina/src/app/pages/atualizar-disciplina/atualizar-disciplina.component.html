@@ -1,0 +1,15 @@
+<div class="update-container">
+  <h2>🔄 Atualizar Disciplina</h2>
+  <form (ngSubmit)="atualizar()">
+    <label for="id">ID</label>
+    <input type="number" [(ngModel)]="disciplina.id" name="id" required />
+
+    <label for="nome">Nome</label>
+    <input type="text" [(ngModel)]="disciplina.nome" name="nome" required />
+
+    <label for="descricao">Descrição</label>
+    <input type="text" [(ngModel)]="disciplina.descricao" name="descricao" required />
+
+    <button type="submit">Atualizar</button>
+  </form>
+</div>

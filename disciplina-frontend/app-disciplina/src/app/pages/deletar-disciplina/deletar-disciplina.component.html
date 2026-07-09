@@ -1,0 +1,9 @@
+<div class="delete-container">
+  <h2>🗑️ Deletar Disciplina</h2>
+  <form (ngSubmit)="deletar()">
+    <label for="id">ID da disciplina</label>
+    <input type="number" [(ngModel)]="id" name="id" required />
+
+    <button type="submit" class="btn-delete">Deletar</button>
+  </form>
+</div>

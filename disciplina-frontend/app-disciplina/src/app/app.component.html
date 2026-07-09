@@ -1,2 +1,13 @@
-<app-lista-disciplina></app-lista-disciplina>
-<app-form-disciplina></app-form-disciplina>
+<nav class="navbar">
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active">Inicial</a></li>
+    <li><a routerLink="/form" routerLinkActive="active">Cadastrar</a></li>
+    <li><a routerLink="/lista" routerLinkActive="active">Listar</a></li>
+    <li><a routerLink="/atualizar" routerLinkActive="active">Atualizar</a></li>
+    <li><a routerLink="/deletar" routerLinkActive="active">Deletar</a></li>
+  </ul>
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

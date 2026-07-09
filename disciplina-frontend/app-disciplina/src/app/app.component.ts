@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ListaDisciplinaComponent } from './pages/lista-disciplina/lista-disciplina.component';
-import { FormDisciplinaComponent } from './pages/form-disciplina/form-disciplina.component';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ListaDisciplinaComponent, FormDisciplinaComponent],
+  standalone: true,
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'app-disciplina';
-}
+export class AppComponent {}
