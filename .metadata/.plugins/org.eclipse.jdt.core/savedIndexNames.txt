@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+D:\MUNIZ\spring\app-disciplina-fullstack\.metadata\.plugins\org.eclipse.jdt.core
+1333943710.index
+606877073.index
